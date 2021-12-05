@@ -1,0 +1,220 @@
+@import url("fontawesome-all.min.css");
+
+body, html {
+    height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+/* h1{
+  font-family: sans-serif;
+  font-size: 10vw;
+}
+h2{
+  font-family: sans-serif;
+  font-size: 10vw;
+}
+h3{
+  font-family: sans-serif;
+  font-size: 10vw;
+} */
+h1
+{
+  color: white;
+  font-size: 5vw;
+  text-shadow: 6px 6px 3px rgb(7, 1, 1);
+  animation: fadeInAnimation ease 5s;
+}
+ h2
+{
+  color: white;
+  font-size: 3vw;
+  text-shadow: 2px 2px 1px rgb(7, 1, 1);
+  animation: fadeInAnimation ease 10s
+}
+body {
+    background: linear-gradient(#09101f,#CBD0D8 );
+    overflow-x: linear-gradient(#CBD0D8, #09101f);
+    animation: fadeInAnimation ease 8s;
+    /* animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+    /* animation-duration: 10s; */
+    /*opacity: 10;
+    transition: opacity 5s;
+    margin: 0; */
+    background-size: auto;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+  .myButton {
+    box-shadow:inset 0px 1px 3px 0px #141414;
+    background:linear-gradient(to bottom, #d3ac2b 5%, #d3ac2b 100%);
+    background-color:#d3ac2b;
+    border-radius:5px;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:sans-serif;
+    font-size:3.5vmin;
+    font-weight:bold;
+    padding:15px 26px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #020505;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, #d3ac2b 5%, #d3ac2b 100%);
+    background-color:#d3ac2b;
+    color:#000000;
+    background-color: #FFFFFF
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+
+  .flyinfromright{
+      height: 50px;
+      overflow: hidden;
+      position: relative;
+  }
+
+   .flyinfromright h1{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      animation: flyinfromright 2s ease-out 
+    }
+
+    @keyframes flyinfromright{
+        0%{
+            transform: translateX(200%)
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+
+    .flyinfromleft{
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+  
+     .flyinfromleft h2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        animation: flyinfromleft 2s ease-out 
+      }
+  
+      /* @keyframes flyinfromleft{
+          100%{
+              transform: translateX(200%)
+          }
+          0%{
+              transform: translateX(0%);
+          }
+      } */
+      @-webkit-keyframes flyinfromleft {
+        from {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+    
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    
+      @keyframes flyinfromleft {
+        from {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+    
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .flyinfromright2{
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+  
+     .flyinfromright2 h3{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        animation: flyinfromright2 2s ease-out 
+      }
+
+      @keyframes flyinfromright2{
+        0%{
+            transform: translateX(200%)
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+  
+    *{
+      padding: 0;
+      
+      box-sizing: border-box;
+  }
+  
+  .wrapper{
+      width: 40%;
+      min-width: 570px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+  }
+  .container{
+      width: 75vmin;
+      padding: 30px 30px 50px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+      margin: 20px auto;
+      margin-top: 20px auto;
+      margin-bottom: 20px auto;
+  } 
+  .container *{
+      font-family: "Poppins",sans-serif;
+      color: black;
+      font-weight: 500;
+  }
+  
+  
+  .details{
+      width: 100%;
+      display: flex;  
+      justify-content: space-between;
+      margin-bottom: 10px;
+  }
+
+

@@ -1,0 +1,315 @@
+@import url("fontawesome-all.min.css");
+h1
+{
+  color: white;
+  font-size: 17px;
+  text-shadow: 6px 6px 3px rgb(7, 1, 1);
+}
+h2
+{
+  color: white;
+  font-size: 5vw;
+  text-shadow: 1px 1px 1px rgb(7, 1, 1);
+  
+}
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #141414;
+	background:linear-gradient(to bottom, #d3ac2b 5%, #d3ac2b 100%);
+	background-color:#d3ac2b;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:3.5vmin;
+	font-weight:bold;
+	padding:15px 26px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #020505;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #d3ac2b 5%, #d3ac2b 100%);
+	background-color:#d3ac2b;
+  color:#000000;
+  background-color: #FFFFFF
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* h1{
+    color: rgb(164, 235, 32);
+}
+
+  @keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -300px 0px;}
+    }
+
+    
+    @-webkit-keyframes backgroundScroll {
+        from {background-position: 0 0;}
+        to {background-position: -180px 0px;}
+        }
+
+        body {
+            color:#fff;
+            text-align:center;
+            background-image: url("/main/css/image/bg.jpg") ;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-size: 100px;
+            font-family: ‘Dancing Script’, cursive;
+            -webkit-animation: backgroundScroll 180s linear infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation: backgroundScroll 180s linear infinite;
+            animation-fill-mode: forwards;
+            }
+
+            
+h3 {
+    animation-duration: 8s;
+    animation-name: slideInLeft;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  } */
+/* @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }*/
+
+  /* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+  } 
+
+  .box {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-delay: 1s;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+  body, html {
+    height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+/* h1, h2 {
+  width: 100%;
+}
+
+h1 {
+  animation: right_to_left 3s ease;
+}
+
+h2 {
+  text-align: right;
+  animation: left_to_right 3s ease;
+} */
+
+
+body {
+  background: linear-gradient(#09101f,#CBD0D8 );
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /* animation-duration: 10s; */
+  /*opacity: 10;
+  transition: opacity 5s;
+  margin: 0; */
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(21, 26, 16); */
+    background: linear-gradient(#09101f, #CBD0D8); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+  /* display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 4s infinite ease;*/ 
+  border: 5px solid #fbfcfd; 
+  border-top: 5px solid #7409ff; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: loader 2s linear infinite;
+  
+ 
+}
+
+.loader2 {
+    /* display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 4s infinite ease; */
+    border: 5px solid #fbfcfd; /* Light grey */
+    border-top: 5px solid #d7fc06; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: loader2 2s linear infinite;
+   
+  }
+  .loader3 {
+    /* display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 4s infinite ease; */
+    border: 5px solid #fbfcfd; /* Light grey */
+    border-top: 5px solid #f80b0b; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: loader3 2s linear infinite;
+   
+  }
+  .loader4 {
+    /* display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 4s infinite ease; */
+    border: 5px solid #fbfcfd; /* Light grey */
+    border-top: 5px solid #22fc05; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: loader4 2s linear infinite;
+   
+  }
+
+
+
+@keyframes loader {
+   100% {
+    transform: rotate(0deg);
+    
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes loader2 {
+    0% {
+        transform: rotate(0deg);
+        
+      }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes loader3 {
+    100% {
+        transform: rotate(0deg);
+        
+      }
+    
+    0% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes loader4 {
+    0% {
+        transform: rotate(0deg);
+        
+      }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+/* Adding a fade in Animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*buttons moving in from different sides*/
+/* @keyframes right_to_left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+  
+  @keyframes left_to_right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }  */
+  .responsiveimage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
